@@ -58,7 +58,7 @@ class ScoreFragment : Fragment() {
 
         binding.scoreViewModel = viewModel
 
-        // Specify the current activity Add LiveData to GameViewModel as the lifecycle owner of the binding. This is used so that
+        //  LiveData Map Transformation of the binding. This is used so that
         binding.setLifecycleOwner(this)
 
         // Navigates back to title when button is pressed Add ViewModel to Data Binding

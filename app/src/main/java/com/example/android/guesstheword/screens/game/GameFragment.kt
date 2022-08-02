@@ -58,7 +58,6 @@ class GameFragment : Fragment() {
         // Specify the current activity as the lifecycle owner of the binding. This is used so that
         binding.setLifecycleOwner(this)
 
-        // Add LiveData Data Binding
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { isFinished ->
             if (isFinished) {
                 val currentScore = viewModel.score.value ?: 0

@@ -36,7 +36,7 @@ class GameViewModel : ViewModel() {
     companion object {
         // These represent different important times in the game, such as game length.
 
-        // This is when the game is over
+        // This is when the game is over  LiveData Map Transformation
         private const val DONE = 0L
 
         // This is the number of milliseconds in a second
