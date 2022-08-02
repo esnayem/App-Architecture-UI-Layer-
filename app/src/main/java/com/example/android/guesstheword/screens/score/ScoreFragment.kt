@@ -43,7 +43,6 @@ class ScoreFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        //  Add End Game Event
         val binding: ScoreFragmentBinding = DataBindingUtil.inflate(
                 inflater,
                 R.layout.score_fragment,
@@ -63,7 +62,7 @@ class ScoreFragment : Fragment() {
         // Add LiveData to GameViewModel and Add LiveData Encapsulation to GameViewModel and Add CountDownTimer
         binding.setLifecycleOwner(this)
 
-        // Navigates back to title when button is pressed
+        // Navigates back to title when button is pressed Add a ViewModelFactory
         viewModel.eventPlayAgain.observe(this, Observer { playAgain ->
             if (playAgain) {
                 findNavController().navigate(ScoreFragmentDirections.actionRestart())
