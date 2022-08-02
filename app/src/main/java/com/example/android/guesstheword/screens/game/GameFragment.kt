@@ -56,7 +56,7 @@ class GameFragment : Fragment() {
         binding.gameViewModel = viewModel
 
         // Specify the current activity as the lifecycle owner of the binding. This is used so that
-        // the binding can observe LiveData updates
+        // the binding can observe LiveData updates  Add End Game Event
         binding.setLifecycleOwner(this)
 
         // Add LiveData Encapsulation to GameViewModel
@@ -70,7 +70,7 @@ class GameFragment : Fragment() {
         })
 
         // TODO (09) Created an observer for the buzz event which calls the buzz method with the
-        // correct pattern. Remember to call onBuzzComplete!
+        // correct pattern. Remember to call onBuzzComplete!  Add End Game Event
 
         return binding.root
 

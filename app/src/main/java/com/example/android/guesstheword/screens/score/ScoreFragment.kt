@@ -43,7 +43,7 @@ class ScoreFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        // Inflate view and obtain an instance of the binding class.
+        //  Add End Game Event
         val binding: ScoreFragmentBinding = DataBindingUtil.inflate(
                 inflater,
                 R.layout.score_fragment,

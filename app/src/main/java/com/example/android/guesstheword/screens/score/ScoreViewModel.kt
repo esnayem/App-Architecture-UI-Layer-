@@ -25,6 +25,7 @@ import androidx.lifecycle.ViewModel
  */
 class ScoreViewModel(finalScore: Int) : ViewModel() {
 
+    // Add End Game Event
     private val _eventPlayAgain = MutableLiveData<Boolean>()
     val eventPlayAgain: LiveData<Boolean>
         get() = _eventPlayAgain
