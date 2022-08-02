@@ -62,7 +62,7 @@ class ScoreFragment : Fragment() {
         // Add LiveData to GameViewModel and Add LiveData Encapsulation to GameViewModel and Add CountDownTimer
         binding.setLifecycleOwner(this)
 
-        // Navigates back to title when button is pressed Add a ViewModelFactory
+        // Navigates back to title when button is pressed Add ViewModel to Data Binding
         viewModel.eventPlayAgain.observe(this, Observer { playAgain ->
             if (playAgain) {
                 findNavController().navigate(ScoreFragmentDirections.actionRestart())

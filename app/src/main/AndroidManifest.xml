@@ -32,8 +32,8 @@
         <!-- TODO (02) You can also optionally lock the screen to landscape - copy over
          the provided code-->
         <!-- Screen locked to landscape for easier play -->
-        <!--  Add a ViewModelFactory -->
-        <!-- screenOrientation attribute sets the default animation-->
+        <!--  Add ViewModel to Data Binding -->
+
         <activity android:name=".MainActivity">
 
             <intent-filter>

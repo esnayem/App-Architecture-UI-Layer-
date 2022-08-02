@@ -52,7 +52,7 @@ class GameFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the
-        // Add LiveData Encapsulation to GameViewModel
+        // Add LiveData Encapsulation to GameViewModel Add ViewModel to Data Binding
         binding.gameViewModel = viewModel
 
         // Specify the current activity as the lifecycle owner of the binding. This is used so that
