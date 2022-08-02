@@ -25,7 +25,6 @@ import androidx.lifecycle.ViewModel
  */
 class ScoreViewModel(finalScore: Int) : ViewModel() {
 
-    // Add ViewModel to Data Binding
     private val _eventPlayAgain = MutableLiveData<Boolean>()
     val eventPlayAgain: LiveData<Boolean>
         get() = _eventPlayAgain
