@@ -26,13 +26,12 @@ import androidx.lifecycle.ViewModel
 // TODO (03) Copy over the different buzz pattern Long array constants here
 
 /**
- * ViewModel containing all the logic needed to run the game
+ * game view model is created
  */
 class GameViewModel : ViewModel() {
 
     // TODO (04) Make an enum called BuzzType - have a different buzz type for CORRECT, GAME_OVER
     // COUNTDOWN_PANIC and NO_BUZZ. Also add a number of seconds to the companion object for when
-    // count-down buzzing will start
 
     companion object {
         // These represent different important times in the game, such as game length.
