@@ -41,6 +41,7 @@ class GameFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
 
         // Inflate view and obtain an instance of the binding class
+        //Populate the GameViewModel
         binding = DataBindingUtil.inflate(
                 inflater,
                 R.layout.game_fragment,
@@ -48,7 +49,6 @@ class GameFragment : Fragment() {
                 false
         )
 
-        // Get the viewmodel
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the

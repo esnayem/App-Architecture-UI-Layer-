@@ -88,7 +88,6 @@ class GameViewModel : ViewModel() {
 
         // TODO (06) Set the value of buzz event to the correct BuzzType when the buzzer should
         // fire. This should happen when the game is over, when the user gets a correct answer,
-        // and on each tick when countdown buzzing starts
 
         // Creates a timer which triggers the end of the game when it finishes
         timer = object : CountDownTimer(COUNTDOWN_TIME, ONE_SECOND) {
