@@ -32,7 +32,7 @@
         <!-- TODO (02) You can also optionally lock the screen to landscape - copy over
          the provided code-->
         <!-- Screen locked to landscape for easier play -->
-        <!-- configChanges attribute makes the following actions NOT cause a config change  -->
+        <!-- Add LiveData to GameViewModel  -->
         <!-- screenOrientation attribute sets the default animation-->
         <activity android:name=".MainActivity">
 

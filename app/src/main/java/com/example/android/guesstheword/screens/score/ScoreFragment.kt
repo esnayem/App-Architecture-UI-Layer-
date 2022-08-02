@@ -59,8 +59,8 @@ class ScoreFragment : Fragment() {
 
         binding.scoreViewModel = viewModel
 
-        // Specify the current activity as the lifecycle owner of the binding. This is used so that
-        // the binding can observe LiveData updates
+        // Specify the current activity Add LiveData to GameViewModel as the lifecycle owner of the binding. This is used so that
+        // Add LiveData to GameViewModel
         binding.setLifecycleOwner(this)
 
         // Navigates back to title when button is pressed
