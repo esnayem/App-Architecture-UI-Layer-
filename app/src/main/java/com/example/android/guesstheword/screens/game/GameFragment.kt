@@ -70,7 +70,7 @@ class GameFragment : Fragment() {
         })
 
         // TODO (09) Created an observer for the buzz event which calls the buzz method with the
-        // correct pattern. Remember to call onBuzzComplete!  Add End Game Event
+        // correct pattern. Remember to call onBuzzComplete!
 
         return binding.root
 
