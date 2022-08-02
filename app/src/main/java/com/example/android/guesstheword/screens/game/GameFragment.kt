@@ -52,14 +52,14 @@ class GameFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the
-        // data in the VieWModel
+        // Add LiveData Encapsulation to GameViewModel
         binding.gameViewModel = viewModel
 
         // Specify the current activity as the lifecycle owner of the binding. This is used so that
         // the binding can observe LiveData updates
         binding.setLifecycleOwner(this)
 
-        // Sets up event listening to navigate the player when the game is finished
+        // Add LiveData Encapsulation to GameViewModel
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { isFinished ->
             if (isFinished) {
                 val currentScore = viewModel.score.value ?: 0
