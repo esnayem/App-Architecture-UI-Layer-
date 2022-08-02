@@ -31,7 +31,7 @@
 
         <!-- TODO (02) You can also optionally lock the screen to landscape - copy over
          the provided code-->
-        <!-- Screen locked to landscape for easier play -->
+        <!-- Adding the Buzzer -->
 
         <activity android:name=".MainActivity">
 

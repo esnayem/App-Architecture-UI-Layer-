@@ -34,7 +34,7 @@ class GameViewModel : ViewModel() {
     // COUNTDOWN_PANIC and NO_BUZZ. Also add a number of seconds to the companion object for when
 
     companion object {
-        // These represent different important times in the game, such as game length.
+        // Adding the Buzzer
 
         // This is when the game is over  LiveData Map Transformation
         private const val DONE = 0L
@@ -58,7 +58,6 @@ class GameViewModel : ViewModel() {
         DateUtils.formatElapsedTime(time)
     }
 
-    // The current word
     private val _word = MutableLiveData<String>()
     val word: LiveData<String>
         get() = _word

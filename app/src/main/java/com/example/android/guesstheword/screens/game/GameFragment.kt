@@ -55,7 +55,6 @@ class GameFragment : Fragment() {
         // Add LiveData Encapsulation to GameViewModel Add ViewModel to Data Binding
         binding.gameViewModel = viewModel
 
-        // Specify the current activity as the lifecycle owner of the binding. This is used so that
         binding.setLifecycleOwner(this)
 
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { isFinished ->
